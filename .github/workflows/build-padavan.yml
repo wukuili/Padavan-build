@@ -56,8 +56,8 @@ jobs:
         fi
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SSSERVER/d' configs/templates/$TNAME.config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FRPS/d' configs/templates/$TNAME.config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' configs/templates/$TNAME.config
-        echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> configs/templates/$TNAME.config
+        #   sed -i '/CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER/d' configs/templates/$TNAME.config
+        #   echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=y" >> configs/templates/$TNAME.config
         echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >> configs/templates/$TNAME.config
         echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> configs/templates/$TNAME.config
         sudo ./clear_tree
